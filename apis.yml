@@ -1,8 +1,18 @@
 aid: spindle-technologies
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/spindle-technologies.png
 name: Spindle Technologies
-description: 'Spindle Technologies is a company surfaced as a portfolio company of accel and added to
-  the API Evangelist network as a stub for enrichment. Sector: ai. This profile is a lead awaiting the
-  enrichment pipeline.'
+description: 'Spindle Technologies (spindle.ai) was an Accel-backed AI startup that was acquired by Salesforce; as of this enrichment pass its entire domain — including the docs, developer, api, and app subdomains — issues a 301 redirect to salesforce.com/agentforce, so it no longer operates an independent developer portal, API, documentation, or SDK surface. This profile is retained as a network record of the company and its acquisition. No standalone API artifacts could be harvested. Domain-level security posture (TLS/DNSSEC/SPF/DMARC on spindle.ai) was probed and captured.'
 url: https://raw.githubusercontent.com/api-evangelist/spindle-technologies/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -10,12 +20,19 @@ x-backed-by:
 - accel
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-status: acquired
+x-acquired-by: salesforce
+x-acquired-note: 'spindle.ai and all subdomains 301-redirect to https://salesforce.com/agentforce (verified 2026-07-21)'
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
 - Ai
+- Artificial Intelligence
+- Agents
+- Salesforce
+- Acquired
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,5 +40,12 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/spindle-technologies-domain-security.yml
 - type: Website
   url: https://spindle.ai/
+x-enrichment:
+  date: '2026-07-21'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
