@@ -12,7 +12,12 @@ accessModel:
   method: derived
 image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/spindle-technologies.png
 name: Spindle Technologies
-description: 'Spindle Technologies (spindle.ai) was an Accel-backed AI startup that was acquired by Salesforce; as of this enrichment pass its entire domain — including the docs, developer, api, and app subdomains — issues a 301 redirect to salesforce.com/agentforce, so it no longer operates an independent developer portal, API, documentation, or SDK surface. This profile is retained as a network record of the company and its acquisition. No standalone API artifacts could be harvested. Domain-level security posture (TLS/DNSSEC/SPF/DMARC on spindle.ai) was probed and captured.'
+description: Spindle Technologies (spindle.ai) was an Accel-backed AI startup that was acquired by Salesforce; as
+  of this enrichment pass its entire domain — including the docs, developer, api, and app subdomains — issues a
+  301 redirect to salesforce.com/agentforce, so it no longer operates an independent developer portal, API, documentation,
+  or SDK surface. This profile is retained as a network record of the company and its acquisition. No standalone
+  API artifacts could be harvested. Domain-level security posture (TLS/DNSSEC/SPF/DMARC on spindle.ai) was probed
+  and captured.
 url: https://raw.githubusercontent.com/api-evangelist/spindle-technologies/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -22,10 +27,10 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 x-status: acquired
 x-acquired-by: salesforce
-x-acquired-note: 'spindle.ai and all subdomains 301-redirect to https://salesforce.com/agentforce (verified 2026-07-21)'
+x-acquired-note: spindle.ai and all subdomains 301-redirect to https://salesforce.com/agentforce (verified 2026-07-21)
 specificationVersion: '0.23'
 created: '2026-07-17'
-modified: '2026-07-21'
+modified: '2026-08-21'
 tags:
 - Company
 - Artificial Intelligence
@@ -46,6 +51,11 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: ParentCompany
+  url: https://apis.io/providers/salesforce/
+  name: Salesforce
+  x-relationship: acquisition
+  x-generated-by: salesforce-family:2026-08-21
 - type: DomainSecurity
   url: security/spindle-technologies-domain-security.yml
 - type: Website
@@ -55,3 +65,5 @@ x-enrichment:
   status: minimal
   artifacts_added: 1
   pass: local-v1
+x-parent: salesforce
+x-relationship: acquisition
