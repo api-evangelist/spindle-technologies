@@ -1,0 +1,36 @@
+# Front Door AI Index — spindle-technologies — 2026-09-17
+# AI vocabulary counted on the provider's root page. Generated; do not edit.
+# `score` is null unless ownership is `own` — see front_door_ai.py.
+front_door_ai:
+  slug: spindle-technologies
+  lexicon_version: '1.0'
+  probed_at: '2026-09-17'
+  host: spindle.ai
+  final_host: www.salesforce.com
+  ownership: own
+  owner: spindle-technologies
+  shares_host_with: null
+  inherited_from: null
+  verdict: scored
+  score: 60
+  host_score: 60
+  density: 35.74
+  words: 1679
+  tiers:
+    agentic: 29
+    core: 31
+    model: 0
+  ambiguous: 63
+  top_terms:
+    agent: 63
+    AI: 28
+    AI agent: 19
+    prompts: 3
+    MCP: 2
+    chatbot: 2
+    LLMs: 1
+    agentic: 1
+    copilot: 1
+    conversational AI: 1
+    generative ai: 1
+    large language model: 1
